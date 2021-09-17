@@ -2,15 +2,17 @@
 # Query
 #############################################
 type Query {
-    tasks: [Tasks] # タスク一覧
+    # tasks: [TaskS]  # タスク一覧
+    tasks: [Task]  # タスク一覧
 }
 #############################################
 # Mutation
 #############################################
-type Mutation {
-    addTask(input: AddTaskInput!): AddTaskResponse # タスク追加
-    removeTask(taskId: ID!): RemoveTaskResponse # タスク削除
-}
+# TODO: MutationResolver を作成してから 下記の commentout を外すようにしてください 定義していないとエラーが発生するので
+#type Mutation {
+#    addTask(input: AddTaskInput!): AddTaskResponse # タスク追加
+#    removeTask(taskId: ID!): RemoveTaskResponse # タスク削除
+#}
 #############################################
 # その他型 定義
 #############################################
